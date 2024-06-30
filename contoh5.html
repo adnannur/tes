@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Contoh 5 Javascript</title></head>
+	<body>
+		Masukkan Jari-jari : <input type="text" id="jari">
+		<button onclick="
+		let jariString = document.getElementById('jari').value;
+		let jariInt = parseInt(jariString);
+		let keliling = 2 * Math.PI * jariInt; 
+		let hasil1 = keliling.toFixed(2);
+		let hasil2 = parseFloat(hasil1);
+		let hasil3 = hasil2.toLocaleString('id-ID');
+		document.getElementById('hasil').innerHTML = 'Keliling Lingkaran : '+hasil3;">
+			Hitung Keliling
+		</button>
+		<hr width="375" align="left">
+		<div id="hasil"></div>
+	</body>
+</html>
+
+
